@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>Ecosim</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+	</head>
+	<body>
+		<div class="canvas">
+			<div class="eclipse">
+				<div class="infogame">
+					<div class="daynb" id="name">...</div><br>
+					Time <div class="daynb" id="daynb">...</div><br>
+					Points <div class="nivnb" id="nivnb">...</div>
+				</div>
+				<div class="inventaire">
+					<p class="title-inventaire">Legumes</p>
+					<div class="item itempatate" id="itempatate" data-count="0"></div>
+					<div class="item itemcarotte" id="itemcarotte" data-count="5"></div>
+					<div class="item itempoireau" id="itempoireau" data-count="10"></div>
+				</div>
+				<div class="inventairegraine">
+					<p class="title-inventaire">Graines</p>
+					<div class="item itempatate" id="itemgrainepatate" data-count="0"></div>
+					<div class="item itemcarotte" id="itemgrainecarotte" data-count="5"></div>
+					<div class="item itempoireau" id="itemgrainepoireau" data-count="10"></div>
+				</div>
+				<canvas id="canvas"></canvas>
+				<div class="sun"></div>
+				<div class="moon"></div>
+				<div class="star"></div>
+				<div class="star a"></div>
+				<div class="star b"></div>
+				<div class="star c"></div>
+				<div class="star d"></div>
+				<div class="title">
+					<a class="button" id="popupbtn">AIDE</a>
+					<a href="main.html" class="button">QUITTER PARTIE</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="popup" class="modal">
+		  <div class="modal-content">
+		    <span class="close">&times;</span>
+		    <p>Page d'aide Ecosim</p>
+				<p class="inlineb">Objetif : Atteindre le nombre de points requis pour survivre</p>
+				<img src="img/haut.png" class="imgtuto"/><p class="inlineb">Déplacer personnage vers le haut</p><br>
+				<img src="img/bas.png" class="imgtuto"/><p class="inlineb">Déplacer personnage vers le bas</p><br>
+				<img src="img/gauche.png" class="imgtuto"/><p class="inlineb">Déplacer personnage vers la gauche</p><br>
+				<img src="img/droite.png" class="imgtuto"/><p class="inlineb">Déplacer personnage vers la droite</p><br>
+				<img src="img/a.png" class="imgtuto"/><p class="inlineb">Planter graine / Vendre légume pomme de terre</p><br>
+				<img src="img/z.png" class="imgtuto"/><p class="inlineb">Planter graine / Vendre légume carotte</p><br>
+				<img src="img/e.png" class="imgtuto"/><p class="inlineb">Planter graine / Vendre légume poireau</p><br>
+				<img src="img/espace.png" class="imgtuto"/><p class="inlineb">Récolter la parcelle</p><br>
+		  </div>
+		</div>
+
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+
+</html>
